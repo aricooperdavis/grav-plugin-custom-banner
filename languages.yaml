@@ -1,0 +1,14 @@
+en:
+  PLUGIN_CUSTOM_BANNER:
+    CONTENT: Banner Content
+    CONTENT_HELP: Banner content must be valid HTML
+    BG_COLOUR: Background Colour
+    BG_COLOUR_HELP: The colour of the banner background
+    FG_COLOUR: Foreground Colour
+    FG_COLOUR_HELP: The colour of the banner text (foreground)
+    BOX_SHADOW: Box Shadow
+    BOX_SHADOW_HELP: Display a box shadow beneath the banner
+    BUTTON_TEXT: Button Text
+    BUTTON_TEXT_HELP: Button text must be valid HTML
+    BUTTON_URL: Button URL
+    BUTTON_URL_HELP: The location that the button links to

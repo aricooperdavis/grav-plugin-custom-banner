@@ -1,0 +1,25 @@
+.custom-banner-container {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  z-index: 10000;
+}
+
+.custom-banner-body {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+.custom-banner-content {
+  margin: auto;
+  font-size: 120%;
+}
+
+.custom-banner-button {
+  margin: auto;
+  border-radius: 4px;
+}

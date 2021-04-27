@@ -1,0 +1,60 @@
+name: Custom Banner
+slug: custom-banner
+type: plugin
+version: 0.1.0
+description: Add a custom banner to your Grav site
+icon: plug
+author:
+  name: Ari Cooper-Davis
+  email: grav@cooper-davis.net
+homepage: https://github.com/aricooperdavis/grav-plugin-custom-banner
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/aricooperdavis/grav-plugin-custom-banner/issues
+docs: https://github.com/aricooperdavis/grav-plugin-custom-banner/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    content:
+      type: text
+      label: PLUGIN_CUSTOM_BANNER.CONTENT
+      help: PLUGIN_CUSTOM_BANNER.CONTENT_HELP
+    button-text:
+      type: text
+      label: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT
+      help: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT_HELP
+    button-url:
+      type: text
+      label: PLUGIN_CUSTOM_BANNER.BUTTON_URL
+      help: PLUGIN_CUSTOM_BANNER.BUTTON_URL_HELP
+    bg-colour:
+      type: colorpicker
+      label: PLUGIN_CUSTOM_BANNER.BG_COLOUR
+      help: PLUGIN_CUSTOM_BANNER.BG_COLOUR_HELP
+    fg-colour:
+      type: colorpicker
+      label: PLUGIN_CUSTOM_BANNER.FG_COLOUR
+      help: PLUGIN_CUSTOM_BANNER.FG_COLOUR_HELP
+    box-shadow:
+      type: toggle
+      label: PLUGIN_CUSTOM_BANNER.BOX_SHADOW
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
