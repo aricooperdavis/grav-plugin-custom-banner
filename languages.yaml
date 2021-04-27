@@ -12,5 +12,5 @@ en:
     BUTTON_TEXT_HELP: Button text must be valid HTML
     BUTTON_URL: Button URL
     BUTTON_URL_HELP: The location that the button links to
-    EXCLUDE_PAGES: Exluded Pages
+    EXCLUDE_PAGES: Excluded Pages
     EXCLUDE_PAGES_HELP: Choose any pages you don't want the banner to appear on
