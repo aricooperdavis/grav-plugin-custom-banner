@@ -1,14 +1,13 @@
 name: Custom Banner
 slug: custom-banner
 type: plugin
-version: 0.1.0
+version: 1.0.0
 description: Add a custom banner to your Grav site
-icon: plug
+icon: bookmark
 author:
   name: Ari Cooper-Davis
   email: grav@cooper-davis.net
 homepage: https://github.com/aricooperdavis/grav-plugin-custom-banner
-demo: http://demo.yoursite.com
 keywords: grav, plugin, etc
 bugs: https://github.com/aricooperdavis/grav-plugin-custom-banner/issues
 docs: https://github.com/aricooperdavis/grav-plugin-custom-banner/blob/develop/README.md
