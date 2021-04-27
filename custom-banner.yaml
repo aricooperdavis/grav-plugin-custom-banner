@@ -5,3 +5,5 @@ button-url: /blog
 bg-colour: '#EC565C'
 fg-colour: 'rgba(255, 255, 255, 0.80)'
 box-shadow: true
+exclude-pages:
+  - /blog

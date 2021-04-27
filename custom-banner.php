@@ -88,8 +88,10 @@ class CustomBannerPlugin extends Plugin
         EOD;
 
         // Add banner to grav output
-        $output = $this->grav->output;
-        $output = preg_replace('/(\<body).*?(\>)/i', '${0}'.$banner, $output, 1);
-        $this->grav->output = $output;
+        if (!in_array($this->grav['uri']->url(), $config['exclude-pages'])) {
+            $output = $this->grav->output;
+            $output = preg_replace('/(\<body).*?(\>)/i', '${0}'.$banner, $output, 1);
+            $this->grav->output = $output;
+        }
     }
 }

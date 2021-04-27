@@ -39,9 +39,16 @@ Here is the default configuration and an explanation of available options:
 ```yaml
 enabled: true
 content: Custom Text added by the **Custom Banner** plugin (disable plugin to remove)
+button-text: Read more...
+button-url: /blog
 bg-colour: '#EC565C'
 fg-colour: 'rgba(255, 255, 255, 0.80)'
+box-shadow: true
+exclude-pages:
+  - '/a_page_to_exclude'
 ```
+
+You can also overwrite the style defined in `custom-banner/css/custom-banner.css` with your own css rules.
 
 ### Admin Plugin
 
