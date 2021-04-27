@@ -81,7 +81,7 @@ class CustomBannerPlugin extends Plugin
         <div class="custom-banner-container">
             <div class="custom-banner-body" style="box-shadow: $box_shadow; background-color: $bg_colour;">
                 <p class="custom-banner-content" style="color: $fg_colour;">$content</p>
-                <span style="flex-grow: 1;"></span>
+                <span style="flex-grow: 1; min-width: 1rem;"></span>
                 <a class="button custom-banner-button" href="$button_url">$button_text</a>
             </div>
         </div>
