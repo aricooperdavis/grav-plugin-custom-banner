@@ -2,6 +2,8 @@
 
 The **Custom Banner** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav) which adds a custom banner to your Grav site.
 
+![Example Screenshots](images/examples.jpg)
+
 ## Installation
 
 Installing the Custom Banner plugin can be done in one of three ways: The GPM (Grav Package Manager) installation method lets you quickly install the plugin with a simple terminal command, the manual method lets you do so via a zip file, and the admin method lets you do so via the Admin Plugin.
@@ -39,6 +41,7 @@ Here is the default configuration and an explanation of available options:
 ```yaml
 enabled: true
 content: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
+position: bottom
 button-text: Click me...
 button-url: /route-to-page/you-want-to/link-to
 dismiss-text: Dismiss
@@ -67,4 +70,5 @@ I pretty much copied the style and format of the premium banner from the [Grav S
 ## To Do
 
 - [x] Add a button to make the banner hide-able (for the session? by setting a cookie?)
+- [ ] Add more position options, such as left and right
 - [ ] Translations (help needed)

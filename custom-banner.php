@@ -84,15 +84,16 @@ class CustomBannerPlugin extends Plugin
         $button_text = $config['button-text'];
         $button_url = $config['button-url'];
         $dismiss_text = $config['dismiss-text'];
-        $dismiss_button = ( $config['dismiss-button'] ? 'inline-block' : 'none' );
+        $dismiss_button = ( $config['dismiss-button'] ? 'unset' : 'none' );
 
         // Style
+        $position = $config['position'];
         $bg_colour = $config['bg-colour'];
         $fg_colour = $config['fg-colour'];
         $box_shadow = ($config['box-shadow'] ? '5px 5px 0.75rem gray' : 'none');
 
         $banner = <<<EOD
-        <div class="custom-banner-container">
+        <div class="custom-banner-container" style="$position: 1rem;">
             <div class="custom-banner-body" style="box-shadow: $box_shadow; background-color: $bg_colour;">
                 <p class="custom-banner-content" style="color: $fg_colour;">$content</p>
                 <span style="flex-grow: 1; min-width: 1rem;"></span>

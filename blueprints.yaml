@@ -1,7 +1,7 @@
 name: Custom Banner
 slug: custom-banner
 type: plugin
-version: 1.0.2
+version: 1.0.3
 description: Add a custom banner to your Grav site
 icon: bookmark
 author:
@@ -39,6 +39,14 @@ form:
           default: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
           label: PLUGIN_CUSTOM_BANNER.CONTENT
           help: PLUGIN_CUSTOM_BANNER.CONTENT_HELP
+        position:
+          type: select
+          default: 'bottom'
+          label: PLUGIN_CUSTOM_BANNER.POSITION
+          help: PLUGIN_CUSTOM_BANNER.POSITION_HELP
+          options:
+            bottom: 'Bottom'
+            top: 'Top'
         button-text:
           type: text
           default: Click me...

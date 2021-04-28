@@ -1,3 +1,9 @@
+# v1.0.3
+## 04/28/2021
+
+1. [](#new)
+    * Added option to choose banner location (top or bottom)
+
 # v1.0.2
 ## 04/28/2021
 
