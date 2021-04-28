@@ -65,9 +65,20 @@ class CustomBannerPlugin extends Plugin
 
     public function onOutputGenerated(): void
     {
+
+        // Get plugin config or fill with default if undefined
+        $config = $this->config();
+        $config['exclude-pages'] = (array)$config['exclude-pages'];
+        $defaults = $this->config->getDefaults()['plugins']['custom-banner'];
+        $config = array_merge($defaults, array_filter($config, function($v){
+            return !(is_null($v));
+        }));
+
+        // Validate that all is as expected
+        $this->getBlueprint()->validate($config);
+
         // Generate banner HTML
         // Content
-        $config = $this->config();
         $content = $config['content'];
         $button_text = $config['button-text'];
         $button_url = $config['button-url'];

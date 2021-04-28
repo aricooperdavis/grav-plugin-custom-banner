@@ -39,13 +39,13 @@ Here is the default configuration and an explanation of available options:
 ```yaml
 enabled: true
 content: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
-button-text: Read more...
-button-url: /blog
+button-text: Click me...
+button-url: /route-to-page/you-want-to/link-to
 bg-colour: '#EC565C'
 fg-colour: 'rgba(255, 255, 255, 0.80)'
 box-shadow: true
 exclude-pages:
-  - /blog
+  - /route-to-page/you-want-to/exclude
 ```
 
 You can also overwrite the style defined in `custom-banner/css/custom-banner.css` with your own css rules.

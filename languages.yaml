@@ -1,16 +1,16 @@
 en:
   PLUGIN_CUSTOM_BANNER:
-    CONTENT: Banner Content
+    CONTENT: Banner content
     CONTENT_HELP: Banner content must be valid HTML
-    BG_COLOUR: Background Colour
+    BG_COLOUR: Background colour
     BG_COLOUR_HELP: The colour of the banner background
-    FG_COLOUR: Foreground Colour
-    FG_COLOUR_HELP: The colour of the banner text (foreground)
-    BOX_SHADOW: Box Shadow
+    FG_COLOUR: Foreground colour
+    FG_COLOUR_HELP: The colour of the banner text
+    BOX_SHADOW: Box shadow
     BOX_SHADOW_HELP: Display a box shadow beneath the banner
-    BUTTON_TEXT: Button Text
+    BUTTON_TEXT: Button text
     BUTTON_TEXT_HELP: Button text must be valid HTML
     BUTTON_URL: Button URL
     BUTTON_URL_HELP: The location that the button links to
-    EXCLUDE_PAGES: Excluded Pages
+    EXCLUDE_PAGES: Excluded pages
     EXCLUDE_PAGES_HELP: Choose any pages you don't want the banner to appear on
