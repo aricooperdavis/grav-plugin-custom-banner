@@ -1,4 +1,5 @@
 <?php
+
 namespace Grav\Plugin;
 
 use Composer\Autoload\ClassLoader;
@@ -10,6 +11,8 @@ use Grav\Common\Plugin;
  */
 class CustomBannerPlugin extends Plugin
 {
+    private const CUSTOM_BANNER_DISMISS = 'custom-banner-dismiss';
+
     /**
      * @return array
      *
@@ -32,10 +35,10 @@ class CustomBannerPlugin extends Plugin
     }
 
     /**
-    * Composer autoload.
-    *is
-    * @return ClassLoader
-    */
+     * Composer autoload.
+     *is
+     * @return ClassLoader
+     */
     public function autoload(): ClassLoader
     {
         return require __DIR__ . '/vendor/autoload.php';
@@ -51,6 +54,11 @@ class CustomBannerPlugin extends Plugin
             return;
         }
 
+        // Do not continue if banner has been dismissed
+        if (isset($_COOKIE[self::CUSTOM_BANNER_DISMISS])) {
+            return;
+        }
+
         // Enable the main events we are interested in
         $this->enable([
             'onAssetsInitialized' => ['onAssetsInitialized', 0],
@@ -60,8 +68,8 @@ class CustomBannerPlugin extends Plugin
 
     public function onAssetsInitialized(): void
     {
-      $this->grav['assets']->addDirCss('plugins://custom-banner/css');
-      $this->grav['assets']->addDirJs('plugins://custom-banner/js');
+        $this->grav['assets']->addDirCss('plugins://custom-banner/css');
+        $this->grav['assets']->addDirJs('plugins://custom-banner/js');
     }
 
     public function onOutputGenerated(): void
@@ -71,7 +79,7 @@ class CustomBannerPlugin extends Plugin
         $config = $this->config();
         $config['exclude-pages'] = (array)$config['exclude-pages'];
         $defaults = $this->config->getDefaults()['plugins']['custom-banner'];
-        $config = array_merge($defaults, array_filter($config, function($v){
+        $config = array_merge($defaults, array_filter($config, function ($v) {
             return !(is_null($v));
         }));
 
@@ -84,7 +92,7 @@ class CustomBannerPlugin extends Plugin
         $button_text = $config['button-text'];
         $button_url = $config['button-url'];
         $dismiss_text = $config['dismiss-text'];
-        $dismiss_button = ( $config['dismiss-button'] ? 'unset' : 'none' );
+        $dismiss_button = ($config['dismiss-button'] ? 'unset' : 'none');
 
         // Style
         $position = $config['position'];
