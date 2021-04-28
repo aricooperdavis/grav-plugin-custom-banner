@@ -66,5 +66,5 @@ I pretty much copied the style and format of the premium banner from the [Grav S
 
 ## To Do
 
-- [ ] Add a button to make the banner hide-able (for the session? by setting a cookie?)
+- [x] Add a button to make the banner hide-able (for the session? by setting a cookie?)
 - [ ] Translations (help needed)
