@@ -18,3 +18,5 @@ en:
     DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for 30 mins
     EXCLUDE_PAGES: Excluded pages
     EXCLUDE_PAGES_HELP: Choose any pages you don't want the banner to appear on
+    APPEARANCE: Appearance
+    BEHAVIOUR: Behaviour
