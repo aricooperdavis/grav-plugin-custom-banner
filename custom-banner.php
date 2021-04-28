@@ -61,6 +61,7 @@ class CustomBannerPlugin extends Plugin
     public function onAssetsInitialized(): void
     {
       $this->grav['assets']->addDirCss('plugins://custom-banner/css');
+      $this->grav['assets']->addDirJs('plugins://custom-banner/js');
     }
 
     public function onOutputGenerated(): void
@@ -82,6 +83,8 @@ class CustomBannerPlugin extends Plugin
         $content = $config['content'];
         $button_text = $config['button-text'];
         $button_url = $config['button-url'];
+        $dismiss_text = $config['dismiss-text'];
+        $dismiss_button = ( $config['dismiss-button'] ? 'inline-block' : 'none' );
 
         // Style
         $bg_colour = $config['bg-colour'];
@@ -93,6 +96,7 @@ class CustomBannerPlugin extends Plugin
             <div class="custom-banner-body" style="box-shadow: $box_shadow; background-color: $bg_colour;">
                 <p class="custom-banner-content" style="color: $fg_colour;">$content</p>
                 <span style="flex-grow: 1; min-width: 1rem;"></span>
+                <a class="button custom-banner-dismiss" href="javascript:void(0)" onclick="custom_button_dismiss();" style="display: $dismiss_button;">$dismiss_text</a>
                 <a class="button custom-banner-button" href="$button_url">$button_text</a>
             </div>
         </div>

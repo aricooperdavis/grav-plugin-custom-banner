@@ -1,7 +1,7 @@
 name: Custom Banner
 slug: custom-banner
 type: plugin
-version: 1.0.1
+version: 1.0.2
 description: Add a custom banner to your Grav site
 icon: bookmark
 author:
@@ -44,6 +44,19 @@ form:
       default: /route-to-page/you-want-to/link-to
       label: PLUGIN_CUSTOM_BANNER.BUTTON_URL
       help: PLUGIN_CUSTOM_BANNER.BUTTON_URL_HELP
+    dismiss-text:
+      type: text
+      default: Dismiss
+      label: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT
+      help: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT_HELP
+    dismiss-button:
+      type: toggle
+      label: PLUGIN_CUSTOM_BANNER.DISMISS_BUTTON
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
     bg-colour:
       type: colorpicker
       default: '#EC565C'

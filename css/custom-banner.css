@@ -1,11 +1,11 @@
-.custom-banner-container {
+div.custom-banner-container {
   position: fixed;
   bottom: 1rem;
   width: 100%;
   z-index: 10000;
 }
 
-.custom-banner-body {
+div.custom-banner-body {
   display: flex;
   width: 90%;
   max-width: 1000px;
@@ -14,12 +14,17 @@
   border-radius: 4px;
 }
 
-.custom-banner-content {
+p.custom-banner-content {
   margin: auto;
   font-size: 120%;
 }
 
-.custom-banner-button {
+a.button.custom-banner-button {
   margin: auto;
   border-radius: 4px;
+}
+
+a.button.custom-banner-dismiss {
+  margin-right: 1em;
+  filter: grayscale(1);
 }

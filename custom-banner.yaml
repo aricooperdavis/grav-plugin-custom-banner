@@ -2,6 +2,8 @@ enabled: true
 content: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
 button-text: Click me...
 button-url: /route-to-page/you-want-to/link-to
+dismiss-text: Dismiss
+dismiss-button: true
 bg-colour: '#EC565C'
 fg-colour: 'rgba(255, 255, 255, 0.80)'
 box-shadow: true
