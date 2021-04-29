@@ -49,8 +49,11 @@ class CustomBannerPlugin extends Plugin
      */
     public function onPluginsInitialized(): void
     {
-        // Don't proceed if we are in the admin plugin
+        // Do not show banner in admin
         if ($this->isAdmin()) {
+            $this->enable([
+                'onAdminSave' => ['onAdminSave', 0],
+            ]);
             return;
         }
 
@@ -66,6 +69,16 @@ class CustomBannerPlugin extends Plugin
         ]);
     }
 
+    public function onAdminSave(): void
+    {
+        // When updating plugin settings delete "dismiss" cookie
+        if ($this->grav['uri']->basename() == 'custom-banner') {
+            if (isset($_COOKIE[self::CUSTOM_BANNER_DISMISS])) {
+                setcookie(self::CUSTOM_BANNER_DISMISS, 'false', time()-1, $this->grav['uri']->rootUrl());
+            }
+        }
+    }
+
     public function onAssetsInitialized(): void
     {
         $this->grav['assets']->addDirCss('plugins://custom-banner/css');
@@ -74,7 +87,6 @@ class CustomBannerPlugin extends Plugin
 
     public function onOutputGenerated(): void
     {
-
         // Get plugin config or fill with default if undefined
         $config = $this->config();
         $config['exclude-pages'] = (array)$config['exclude-pages'];

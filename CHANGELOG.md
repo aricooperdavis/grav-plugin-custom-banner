@@ -1,8 +1,18 @@
+# v1.0.4
+## 04/29/2021
+
+1. [](#improved)
+    * Processing stops if dismiss cookie is set
+    * Dismiss cookie is unset on plugin config change
+
 # v1.0.3
 ## 04/28/2021
 
 1. [](#new)
     * Added option to choose banner location (top or bottom)
+2. [](#improved)
+    * Improved readme with Screenshots
+    * Improved config page with sections
 
 # v1.0.2
 ## 04/28/2021
