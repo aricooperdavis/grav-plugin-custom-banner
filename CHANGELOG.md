@@ -1,3 +1,9 @@
+# v1.0.5
+## 06/03/2021
+
+1. [](#fixed)
+    * Fixed install via admin plugin by shipping vendor folder
+
 # v1.0.4
 ## 04/29/2021
 
