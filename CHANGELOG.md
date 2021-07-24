@@ -1,3 +1,9 @@
+# v1.0.6
+## 07/24/2021
+
+1. [](#improved)
+    * Improved formatting of banner action buttons on mobile devices
+
 # v1.0.5
 ## 06/03/2021
 

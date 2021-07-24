@@ -18,13 +18,18 @@ p.custom-banner-content {
   font-size: 120%;
 }
 
+div.custom-banner-actions {
+  text-align: center;
+  margin: auto 0;
+}
+
 a.button.custom-banner-button {
-  margin: auto;
-  border-radius: 4px;
+  /* Style the action button to your liking */
+  margin: 0.125rem 0 0.25rem 0.125rem;
 }
 
 a.button.custom-banner-dismiss {
-  margin: auto 1em auto auto;
-  border-radius: 4px;
+  /* Style the dismiss button to your liking */
+  margin: 0 0.125rem 0.125rem 0;
   filter: grayscale(1);
 }
