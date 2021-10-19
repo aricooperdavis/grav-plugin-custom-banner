@@ -51,6 +51,7 @@ button-text: Click me...
 button-url: /route-to-page/you-want-to/link-to
 dismiss-text: Dismiss
 dismiss-button: true
+cdn-fix: false
 bg-colour: '#EC565C'
 fg-colour: 'rgba(255, 255, 255, 0.80)'
 box-shadow: true
