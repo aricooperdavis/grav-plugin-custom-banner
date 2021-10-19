@@ -32,6 +32,11 @@ If you use the Admin Plugin, you can install the plugin directly by browsing the
 
 ## Configuration
 
+### Note for Cloudflare/CDN Users
+Users of Cloudflare or other cacheing CDNs must enable the "Cloudflare/CDN Fix" option in the plugin configuration.
+
+This adds a `Cache-Control: private` header to all pages that serve the banner, preventing the banner from being served to users who have dismissed it, or failing to be served to users who have not seen it before. There will be a performance penalty associated with this as the CDN will have to request that page from the server every time it is visited, but the CDN should still serve all other assets from its cache.
+
 ### Manual Configuration
 
 Before configuring this plugin, you should copy the `user/plugins/custom-banner/custom-banner.yaml` to `user/config/plugins/custom-banner.yaml` and only edit that copy.

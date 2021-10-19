@@ -58,8 +58,10 @@ class CustomBannerPlugin extends Plugin
         }
 
         // Do not continue if banner has been dismissed
-        if (isset($_COOKIE[self::CUSTOM_BANNER_DISMISS])) {
-            return;
+        if (!$this->config()['cdn-fix']) {
+            if (isset($_COOKIE[self::CUSTOM_BANNER_DISMISS])) {
+                return;
+            }
         }
 
         // Enable the main events we are interested in
@@ -97,6 +99,14 @@ class CustomBannerPlugin extends Plugin
 
         // Validate that all is as expected
         $this->getBlueprint()->validate($config);
+
+        // Add private Cache-Control header if CDN Fix enabled
+        if (!in_array($this->grav['uri']->url(), $config['exclude-pages']) and $config['cdn-fix']) {
+            $this->grav['page']->cacheControl('private');
+        }
+        if (isset($_COOKIE[self::CUSTOM_BANNER_DISMISS])) {
+            return;
+        }
 
         // Generate banner HTML
         // Content

@@ -16,6 +16,8 @@ en:
     DISMISS_TEXT_HELP: Dismiss text must be valid HTML
     DISMISS_BUTTON: Show dismiss button
     DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for 30 mins
+    CDN_FIX: Cloudflare/CDN Fix
+    CDN_FIX_HELP: Enable on sites behind Cloudflare/CDN (small performance penalty)
     EXCLUDE_PAGES: Excluded pages
     EXCLUDE_PAGES_HELP: Choose any pages you don't want the banner to appear on
     APPEARANCE: Appearance

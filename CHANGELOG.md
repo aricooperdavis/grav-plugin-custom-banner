@@ -1,3 +1,9 @@
+# v1.0.7
+## 10/19/2021
+
+1. [](#improved)
+    * Added option that fixes behaviour when site is served behind CDN
+
 # v1.0.6
 ## 07/24/2021
 
