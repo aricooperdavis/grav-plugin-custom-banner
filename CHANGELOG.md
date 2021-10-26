@@ -1,3 +1,10 @@
+# v1.0.8
+## 10/26/2021
+
+1. [](#improved)
+		* Changed CDN Fix behaviour to use client side JS to hide banner
+		* Added strict SameSite attribute to dismissal choice cookie 
+
 # v1.0.7
 ## 10/19/2021
 

@@ -100,11 +100,8 @@ class CustomBannerPlugin extends Plugin
         // Validate that all is as expected
         $this->getBlueprint()->validate($config);
 
-        // Add private Cache-Control header if CDN Fix enabled
-        if (!in_array($this->grav['uri']->url(), $config['exclude-pages']) and $config['cdn-fix']) {
-            $this->grav['page']->cacheControl('private');
-        }
-        if (isset($_COOKIE[self::CUSTOM_BANNER_DISMISS])) {
+        // Don't add banner to excluded pages
+        if (in_array($this->grav['uri']->url(), $config['exclude-pages'])) {
             return;
         }
 
@@ -136,10 +133,8 @@ class CustomBannerPlugin extends Plugin
         EOD;
 
         // Add banner to grav output
-        if (!in_array($this->grav['uri']->url(), $config['exclude-pages'])) {
-            $output = $this->grav->output;
-            $output = preg_replace('/(\<body).*?(\>)/i', '${0}'.$banner, $output, 1);
-            $this->grav->output = $output;
-        }
+        $output = $this->grav->output;
+        $output = preg_replace('/(\<body).*?(\>)/i', '${0}'.$banner, $output, 1);
+        $this->grav->output = $output;
     }
 }
