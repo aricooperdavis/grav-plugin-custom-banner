@@ -122,7 +122,7 @@ class CustomBannerPlugin extends Plugin
         $banner = <<<EOD
         <div class="custom-banner-container" style="$position: 1rem;">
             <div class="custom-banner-body" style="box-shadow: $box_shadow; background-color: $bg_colour;">
-                <p class="custom-banner-content" style="color: $fg_colour;">$content</p>
+                <div class="custom-banner-content" style="color: $fg_colour;">$content</div>
                 <span style="flex-grow: 1; min-width: 1rem;"></span>
                 <div class="custom-banner-actions">
                     <a class="button custom-banner-dismiss" href="javascript:void(0)" onclick="custom_button_dismiss();" style="display: $dismiss_button;">$dismiss_text</a>

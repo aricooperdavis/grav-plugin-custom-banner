@@ -11,9 +11,10 @@ div.custom-banner-body {
   margin: 0 auto;
   padding: 1rem 1.5rem;
   border-radius: 4px;
+  overflow-wrap: anywhere;
 }
 
-p.custom-banner-content {
+div.custom-banner-content {
   margin: auto;
   font-size: 120%;
 }

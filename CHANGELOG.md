@@ -1,9 +1,16 @@
+# v1.0.9
+## 10/10/2022
+
+1. [](#improved)
+    * Changed container from <p> to <div> to allow non-inline elements
+    * Added overflow-wrap: anywhere to improve responsive behaviour 
+
 # v1.0.8
 ## 10/26/2021
 
 1. [](#improved)
-		* Changed CDN Fix behaviour to use client side JS to hide banner
-		* Added strict SameSite attribute to dismissal choice cookie 
+    * Changed CDN Fix behaviour to use client side JS to hide banner
+    * Added strict SameSite attribute to dismissal choice cookie 
 
 # v1.0.7
 ## 10/19/2021
