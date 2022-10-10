@@ -1,3 +1,9 @@
+# v1.0.11
+## 10/10/2022
+
+1. [](#improved)
+    * Align banner content left by default
+
 # v1.0.10
 ## 10/10/2022
 
