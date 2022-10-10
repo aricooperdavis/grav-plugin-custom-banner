@@ -1,3 +1,9 @@
+# v1.0.10
+## 10/10/2022
+
+1. [](#improved)
+    * Improved flex layout
+
 # v1.0.9
 ## 10/10/2022
 
