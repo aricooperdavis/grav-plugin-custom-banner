@@ -17,9 +17,11 @@ en:
     DISMISS_BUTTON: Show dismiss button
     DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for 30 mins
     CDN_FIX: Cloudflare/CDN Fix
-    CDN_FIX_HELP: Use client-side JS to hide banner, avoiding CDN cacheing issues
-    EXCLUDE_PAGES: Excluded pages
-    EXCLUDE_PAGES_HELP: Choose any pages you don't want the banner to appear on
+    CDN_FIX_HELP: Use client-side JS to show/hide banner, avoiding CDN cacheing issues
+    SHOW_ON_PAGES: Only show on
+    SHOW_ON_PAGES_HELP: Only show the banner on the selected pages. Leave blank to show on all pages except excluded.
+    HIDE_ON_PAGES: Excluded pages
+    HIDE_ON_PAGES_HELP: Hide the banner from selected pages (even if included in show-on pages)
     APPEARANCE: Appearance
     BEHAVIOUR: Behaviour
     POSITION: Banner position

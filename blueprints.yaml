@@ -85,12 +85,24 @@ form:
           default: /route-to-page/you-want-to/link-to
           label: PLUGIN_CUSTOM_BANNER.BUTTON_URL
           help: PLUGIN_CUSTOM_BANNER.BUTTON_URL_HELP
-        exclude-pages:
+        show-on-pages:
+          type: pages
+          default:
+            - /route-to-page/you-want-to/include
+          label: PLUGIN_CUSTOM_BANNER.SHOW_ON_PAGES
+          help: PLUGIN_CUSTOM_BANNER.SHOW_ON_PAGES_HELP
+          multiple: true
+          validate:
+            type: array
+          show_all: false
+          show_modular: false
+          show_root: false
+        hide-on-pages:
           type: pages
           default:
             - /route-to-page/you-want-to/exclude
-          label: PLUGIN_CUSTOM_BANNER.EXCLUDE_PAGES
-          help: PLUGIN_CUSTOM_BANNER.EXCLUDE_PAGES_HELP
+          label: PLUGIN_CUSTOM_BANNER.HIDE_ON_PAGES
+          help: PLUGIN_CUSTOM_BANNER.HIDE_ON_PAGES_HELP
           multiple: true
           validate:
             type: array

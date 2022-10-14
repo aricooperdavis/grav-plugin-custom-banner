@@ -91,17 +91,30 @@ class CustomBannerPlugin extends Plugin
     {
         // Get plugin config or fill with default if undefined
         $config = $this->config();
-        $config['exclude-pages'] = (array)$config['exclude-pages'];
+        $config['show-on-pages'] = (array)$config['show-on-pages'];
+        $config['hide-on-pages'] = (array)$config['hide-on-pages'];
         $defaults = $this->config->getDefaults()['plugins']['custom-banner'];
         $config = array_merge($defaults, array_filter($config, function ($v) {
             return !(is_null($v));
         }));
 
+        // Convert home alias to expected route
+        foreach (array('show-on-pages','hide-on-pages') as $cfg) {
+            $config[$cfg] = array_map(function ($route) {
+                return ($route == $this->grav['config']['system']['home']['alias'] ? '/' : $route);
+            }, $config[$cfg]);
+        }
+
         // Validate that all is as expected
         $this->getBlueprint()->validate($config);
 
-        // Don't add banner to excluded pages
-        if (in_array($this->grav['uri']->url(), $config['exclude-pages'])) {
+        // Only add banner to show-on pages
+        if (count($config['show-on-pages'])>0 && !in_array($this->grav['uri']->route(), $config['show-on-pages'])) {
+            return;
+        }
+
+        // Don't add banner to hide-on pages
+        if (in_array($this->grav['uri']->route(), $config['hide-on-pages'])) {
             return;
         }
 

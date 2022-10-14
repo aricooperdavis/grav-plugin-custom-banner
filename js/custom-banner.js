@@ -8,11 +8,17 @@ function custom_button_show() {
 }
 
 let hidden = document.cookie
-	.split('; ')
-	.find(row => row.startsWith('custom-banner-dismiss='));
+.split('; ')
+.find(row => row.startsWith('custom-banner-dismiss='));
 
 document.addEventListener('DOMContentLoaded', (event) => {
 	if (!hidden) {
-		custom_button_show();
+		try {
+			custom_button_show();
+		} catch (error) {
+			if (!error instanceof TypeError) {
+				throw error;
+			}
+		}
 	}
 });
