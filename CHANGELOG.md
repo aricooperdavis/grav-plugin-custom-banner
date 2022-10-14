@@ -1,3 +1,11 @@
+# v1.0.12
+## 14/10/2022
+
+1. [](#improved)
+    * CDN fix now defaults to non-visible banner revealed by JS
+2. [](#new)
+    * Added ability to whitelist pages for showing banner
+
 # v1.0.11
 ## 10/10/2022
 

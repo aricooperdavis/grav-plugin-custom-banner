@@ -53,7 +53,8 @@ cdn-fix: false
 bg-colour: '#EC565C'
 fg-colour: 'rgba(255, 255, 255, 0.80)'
 box-shadow: true
-exclude-pages:
+show-on-pages: # - /route-to-page/you-want-to/include
+hide-on-pages:
   - /route-to-page/you-want-to/exclude
 ```
 
