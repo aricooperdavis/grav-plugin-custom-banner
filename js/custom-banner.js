@@ -3,12 +3,16 @@ function custom_button_dismiss() {
     document.getElementsByClassName('custom-banner-container')[0].style.display = 'none';
 }
 
-const hidden = document.cookie
+function custom_button_show() {
+    document.getElementsByClassName('custom-banner-container')[0].style.display = 'block';
+}
+
+let hidden = document.cookie
 	.split('; ')
 	.find(row => row.startsWith('custom-banner-dismiss='));
 
 document.addEventListener('DOMContentLoaded', (event) => {
-	if (hidden) {
-		custom_button_dismiss();
+	if (!hidden) {
+		custom_button_show();
 	}
 });

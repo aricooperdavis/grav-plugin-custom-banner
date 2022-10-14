@@ -108,6 +108,7 @@ class CustomBannerPlugin extends Plugin
         // Generate banner HTML
         // Content
         $content = $config['content'];
+        $hidden = ($config['cdn-fix'] ? 'none' : 'block');
         $button_text = $config['button-text'];
         $button_url = $config['button-url'];
         $dismiss_text = $config['dismiss-text'];
@@ -120,7 +121,7 @@ class CustomBannerPlugin extends Plugin
         $box_shadow = ($config['box-shadow'] ? '5px 5px 0.75rem gray' : 'none');
 
         $banner = <<<EOD
-        <div class="custom-banner-container" style="$position: 1rem;">
+        <div class="custom-banner-container" style="$position: 1rem; display: $hidden;">
             <div class="custom-banner-body" style="box-shadow: $box_shadow; background-color: $bg_colour;">
                 <div class="custom-banner-content" style="color: $fg_colour;">$content</div>
                 <div class="custom-banner-actions">
