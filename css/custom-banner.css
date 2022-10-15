@@ -3,6 +3,21 @@ div.custom-banner-container {
   position: fixed;
   width: 100%;
   z-index: 10000;
+
+  /* Animate show/hide */
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  
+  /* Hidden by default */
+  opacity: 0;
+  visibility: hidden;
+}
+
+div.custom-banner-container.shown {
+  opacity: 1;
+  visibility: visible;
 }
 
 div.custom-banner-body {

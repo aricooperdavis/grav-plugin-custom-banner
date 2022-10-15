@@ -1,3 +1,9 @@
+# v1.0.13
+## 15/10/2022
+
+1. [](#improved)
+    * Animate banner show/hide
+
 # v1.0.12
 ## 14/10/2022
 
