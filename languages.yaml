@@ -10,6 +10,8 @@ en:
     BOX_SHADOW_HELP: Display a box shadow beneath the banner
     BUTTON_TEXT: Button text
     BUTTON_TEXT_HELP: Button text must be valid HTML
+    BUTTON: Show action button
+    BUTTON_HELP: Show an action button that points to a URL
     BUTTON_URL: Button URL
     BUTTON_URL_HELP: The location that the button links to
     DISMISS_TEXT: Dismiss button text

@@ -44,17 +44,22 @@ enabled: true
 content: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
 position: bottom
 button-text: Click me...
-button-url: /route-to-page/you-want-to/link-to
+button: true
+button-url: https://example.com/
 dismiss-text: Dismiss
 dismiss-button: true
 cdn-fix: false
-bg-colour: '#EC565C'
-fg-colour: 'rgba(255, 255, 255, 0.80)'
+bg-colour: '#A1C3B2'
+fg-colour: 'rgba(0, 20, 10, 0.90)'
 box-shadow: true
 show-on-pages:
 hide-on-pages:
   - /route-to-page/you-want-to/exclude
 ```
+
+Which creates a default banner that looks like this:
+
+![Screenshot of default banner](./images/default_banner.png)
 
 ### Options
 The configuration options can broadly be separated into those that change the plugins appearance, and those that change its behaviour. See the above default configuration for examples of valid configuration values.
@@ -76,6 +81,7 @@ The configuration options can broadly be separated into those that change the pl
 | `button-url` | string | The URL that the action button links to. |
 | `show-on-pages` | array of strings | List of routes of pages on which the banner should be exclusively shown (i.e. a whitelist). Leave empty to show the banner on all pages. |
 | `hide-on-pages` | array of strings | List of routes of pages on which the banner should be hidden (i.e. a blacklist). Takes priority over the `show-on-pages` value for any given page route. |
+| `button` | boolean | Whether an action button is shown or not. |
 | `dismiss-button` | boolean | Whether a dismiss button is shown or not. |
 | `cdn-fix` | boolean | Enable if a CDN is used for cacheing in-front of the site. This uses client-side javascript for the display logic rather than the default behaviour of server-side logic. |
 

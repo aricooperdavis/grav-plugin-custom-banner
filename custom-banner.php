@@ -123,6 +123,7 @@ class CustomBannerPlugin extends Plugin
         $content = $config['content'];
         $hidden = ($config['cdn-fix'] ? '' : 'shown');
         $button_text = $config['button-text'];
+        $button = ($config['button'] ? 'inline-block' : 'none');
         $button_url = $config['button-url'];
         $dismiss_text = $config['dismiss-text'];
         $dismiss_button = ($config['dismiss-button'] ? 'inline-block' : 'none');
@@ -139,7 +140,7 @@ class CustomBannerPlugin extends Plugin
                 <div class="custom-banner-content" style="color: $fg_colour;">$content</div>
                 <div class="custom-banner-actions">
                     <a class="button custom-banner-dismiss" href="javascript:void(0)" onclick="custom_button_dismiss();" style="display: $dismiss_button;">$dismiss_text</a>
-                    <a class="button custom-banner-button" href="$button_url">$button_text</a>
+                    <a class="button custom-banner-button" href="$button_url" style="display: $button;">$button_text</a>
                 </div>
             </div>
         </div>

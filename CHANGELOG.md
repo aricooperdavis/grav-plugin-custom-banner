@@ -1,3 +1,12 @@
+# v1.0.15
+## 15-10-2022
+
+1. [](#new)
+    * New option to enable or disable the action button
+2. [](#improved)
+    * Improve documentation (README.md)
+    * Improved default configuration
+
 # v1.0.14
 ## 15-10-2022
 
