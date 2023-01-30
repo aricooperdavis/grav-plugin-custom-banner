@@ -2,6 +2,7 @@ en:
   PLUGIN_CUSTOM_BANNER:
     CONTENT: Banner content
     CONTENT_HELP: Banner content must be valid HTML
+    CONTENT_DEFAULT: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
     BG_COLOUR: Banner (background) colour
     BG_COLOUR_HELP: The colour of the banner background
     FG_COLOUR: Text (foreground) colour
@@ -10,12 +11,14 @@ en:
     BOX_SHADOW_HELP: Display a box shadow beneath the banner
     BUTTON_TEXT: Button text
     BUTTON_TEXT_HELP: Button text must be valid HTML
+    BUTTON_TEXT_DEFAULT: Click me...
     BUTTON: Show action button
     BUTTON_HELP: Show an action button that points to a URL
     BUTTON_URL: Button URL
     BUTTON_URL_HELP: The location that the button links to
     DISMISS_TEXT: Dismiss button text
     DISMISS_TEXT_HELP: Dismiss text must be valid HTML
+    DISMISS_TEXT_DEFAULT: Dismiss
     DISMISS_BUTTON: Show dismiss button
     DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for 30 mins
     CDN_FIX: Cloudflare/CDN Fix
@@ -27,4 +30,6 @@ en:
     APPEARANCE: Appearance
     BEHAVIOUR: Behaviour
     POSITION: Banner position
+    POSITION_BOTTOM: Bottom
+    POSITION_TOP: Top
     POSITION_HELP: Choose where the banner should appear
