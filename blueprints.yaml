@@ -36,27 +36,27 @@ form:
       fields:
         content:
           type: text
-          default: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
           label: PLUGIN_CUSTOM_BANNER.CONTENT
           help: PLUGIN_CUSTOM_BANNER.CONTENT_HELP
+          default: PLUGIN_CUSTOM_BANNER.CONTENT_DEFAULT
         position:
           type: select
           default: 'bottom'
           label: PLUGIN_CUSTOM_BANNER.POSITION
           help: PLUGIN_CUSTOM_BANNER.POSITION_HELP
           options:
-            bottom: 'Bottom'
-            top: 'Top'
+            bottom: PLUGIN_CUSTOM_BANNER.POSITION_BOTTOM
+            top: PLUGIN_CUSTOM_BANNER.POSITION_TOP
         button-text:
           type: text
-          default: Click me...
           label: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT
           help: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT_HELP
+          default: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT_DEFAULT
         dismiss-text:
           type: text
-          default: Dismiss
           label: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT
           help: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT_HELP
+          default: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT_DEFAULT
         bg-colour:
           type: colorpicker
           default: '#EC565C'
@@ -87,8 +87,6 @@ form:
           help: PLUGIN_CUSTOM_BANNER.BUTTON_URL_HELP
         show-on-pages:
           type: pages
-          default:
-            - /route-to-page/you-want-to/include
           label: PLUGIN_CUSTOM_BANNER.SHOW_ON_PAGES
           help: PLUGIN_CUSTOM_BANNER.SHOW_ON_PAGES_HELP
           multiple: true
@@ -99,8 +97,6 @@ form:
           show_root: false
         hide-on-pages:
           type: pages
-          default:
-            - /route-to-page/you-want-to/exclude
           label: PLUGIN_CUSTOM_BANNER.HIDE_ON_PAGES
           help: PLUGIN_CUSTOM_BANNER.HIDE_ON_PAGES_HELP
           multiple: true
