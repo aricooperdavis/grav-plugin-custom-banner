@@ -1,7 +1,7 @@
 name: Custom Banner
 slug: custom-banner
 type: plugin
-version: 1.0.15
+version: 1.0.16
 description: Add a custom banner to your Grav site
 icon: bookmark
 author:
