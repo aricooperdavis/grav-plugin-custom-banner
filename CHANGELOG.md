@@ -1,3 +1,9 @@
+# v1.0.16
+## 31-01-2023
+
+1. [](#new)
+	* German language support added (thanks Gabbalo!)
+
 # v1.0.15
 ## 15-10-2022
 
