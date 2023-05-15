@@ -1,3 +1,9 @@
+# v1.1.0
+## 15-15-2023
+
+1. [](#new)
+	* fix column stack action button for mobile
+
 # v1.0.16
 ## 31-01-2023
 
