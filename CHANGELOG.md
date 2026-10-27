@@ -1,3 +1,9 @@
+# v1.0.18
+## 27-10-2026
+
+1. [](#new)
+  * Added dismiss cookie max-age functionality (thanks @Kartoffelspalt!)
+
 # v1.0.17
 ## 20-08-2026
 
@@ -9,7 +15,7 @@
 ## 31-01-2023
 
 1. [](#new)
-	* German language support added (thanks Gabbalo!)
+	* German language support added (thanks @Gabbalo!)
 
 # v1.0.15
 ## 15-10-2022

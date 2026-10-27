@@ -48,6 +48,7 @@ button: true
 button-url: https://example.com/
 dismiss-text: Dismiss
 dismiss-button: true
+dismiss-cookie-max-age: 1800
 cdn-fix: false
 bg-colour: '#A1C3B2'
 fg-colour: 'rgba(0, 20, 10, 0.90)'
@@ -83,6 +84,7 @@ The configuration options can broadly be separated into those that change the pl
 | `hide-on-pages` | array of strings | List of routes of pages on which the banner should be hidden (i.e. a blacklist). Takes priority over the `show-on-pages` value for any given page route. |
 | `button` | boolean | Whether an action button is shown or not. |
 | `dismiss-button` | boolean | Whether a dismiss button is shown or not. |
+| `dismiss-cookie-max-age` | integer | Number of seconds to hide the banner after the visitor clicks the dismiss button. |
 | `cdn-fix` | boolean | Enable if a CDN is used for cacheing in-front of the site. This uses client-side javascript for the display logic rather than the default behaviour of server-side logic. |
 
 ## Credits

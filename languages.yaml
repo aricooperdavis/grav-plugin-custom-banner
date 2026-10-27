@@ -20,7 +20,9 @@ en:
     DISMISS_TEXT_HELP: Dismiss text must be valid HTML
     DISMISS_TEXT_DEFAULT: Dismiss
     DISMISS_BUTTON: Show dismiss button
-    DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for 30 mins
+    DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for a specified period (dismissal duration)
+    DISMISS_COOKIE_MAX_AGE: Dismissal duration
+    DISMISS_COOKIE_MAX_AGE_HELP: Number of seconds to hide the banner for after the visitor dismisses it using the dismiss button
     CDN_FIX: Cloudflare/CDN Fix
     CDN_FIX_HELP: Use client-side JS to show/hide banner, avoiding CDN cacheing issues
     SHOW_ON_PAGES: Only show on
@@ -56,7 +58,9 @@ de:
     DISMISS_TEXT_HELP: Verbergen Text muss korrekter HTML-Code sein
     DISMISS_TEXT_DEFAULT: Verbergen
     DISMISS_BUTTON: Zeige Verbergen Button
-    DISMISS_BUTTON_HELP: Zeigt einen Verbergen Button um das Banner für 30 Minuten zu verbergen
+    DISMISS_BUTTON_HELP: Zeigt einen Verbergen-Button, um das Banner für einen festgelegten Zeitraum zu verbergen
+    DISMISS_COOKIE_MAX_AGE: Laufzeit des Verbergen-Cookies
+    DISMISS_COOKIE_MAX_AGE_HELP: Anzahl Sekunden, für die das Banner nach dem Verbergen ausgeblendet bleibt
     CDN_FIX: Cloudflare/CDN Fix
     CDN_FIX_HELP: Benutzt Clientseitiges JavaScript um das Banner zu zeigen/verbergen, um CDN Caching Probleme zu vermeiden
     SHOW_ON_PAGES: Zeige nur auf

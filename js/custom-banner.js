@@ -1,5 +1,11 @@
+function custom_banner_set_dismiss_cookie() {
+    const banner = document.getElementsByClassName('custom-banner-container')[0];
+    const maxAge = banner && banner.dataset.dismissCookieMaxAge;
+    document.cookie = 'custom-banner-dismiss=true; max-age=' + maxAge + '; SameSite=Strict';
+}
+
 function custom_button_dismiss() {
-    document.cookie = 'custom-banner-dismiss=true; max-age=1800; SameSite=Strict';
+    custom_banner_set_dismiss_cookie();
     document.getElementsByClassName('custom-banner-container')[0].classList.remove('shown');
 }
 

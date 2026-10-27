@@ -1,7 +1,7 @@
 name: Custom Banner
 slug: custom-banner
 type: plugin
-version: 1.0.17
+version: 1.0.18
 description: Add a custom banner to your Grav site
 icon: bookmark
 author:
@@ -128,6 +128,14 @@ form:
           options:
             1: PLUGIN_ADMIN.ENABLED
             0: PLUGIN_ADMIN.DISABLED
+        dismiss-cookie-max-age:
+          type: number
+          label: PLUGIN_CUSTOM_BANNER.DISMISS_COOKIE_MAX_AGE
+          help: PLUGIN_CUSTOM_BANNER.DISMISS_COOKIE_MAX_AGE_HELP
+          default: 1800
+          validate:
+            min: 1
+            type: int
         cdn-fix:
           type: toggle
           label: PLUGIN_CUSTOM_BANNER.CDN_FIX

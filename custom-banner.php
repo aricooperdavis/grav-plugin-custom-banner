@@ -127,6 +127,7 @@ class CustomBannerPlugin extends Plugin
         $button_url = $config['button-url'];
         $dismiss_text = $config['dismiss-text'];
         $dismiss_button = ($config['dismiss-button'] ? 'inline-block' : 'none');
+        $dismiss_cookie_max_age = (int)$config['dismiss-cookie-max-age'];
 
         // Style
         $position = $config['position'];
@@ -135,7 +136,7 @@ class CustomBannerPlugin extends Plugin
         $box_shadow = ($config['box-shadow'] ? '5px 5px 0.75rem gray' : 'none');
 
         $banner = <<<EOD
-        <div class="custom-banner-container $hidden" style="$position: 1rem;">
+        <div class="custom-banner-container $hidden" data-dismiss-cookie-max-age="$dismiss_cookie_max_age" style="$position: 1rem;">
             <div class="custom-banner-body" style="box-shadow: $box_shadow; background-color: $bg_colour;">
                 <div class="custom-banner-content" style="color: $fg_colour;">$content</div>
                 <div class="custom-banner-actions">

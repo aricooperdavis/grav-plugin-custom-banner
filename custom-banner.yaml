@@ -6,6 +6,7 @@ button: true
 button-url: https://example.com/
 dismiss-text: Dismiss
 dismiss-button: true
+dismiss-cookie-max-age: 1800
 cdn-fix: false
 bg-colour: '#A1C3B2'
 fg-colour: 'rgba(0, 20, 10, 0.90)'
